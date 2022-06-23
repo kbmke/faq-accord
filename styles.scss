@@ -21,13 +21,44 @@
     --lightGrayishBlue: hsl(240, 5%, 91%);
     // body copy font size
     font-size: 12px;
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-}
+@media only screen and (max-width: 500px) {
+    body {
+        background: linear-gradient(var(--softViolet), var(--softBlue));
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+    .card {
+        width: 350px;
+        height: 400px;
+        background-color: white;
+        display: flex;
+        margin: 160px auto;
+        border-radius: 25px;
+        position: relative;
+    }
+    .pic {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+    #image {
+        width: 250px;
+        position: absolute;
+        left: 15%;
+        bottom: 80%;
+    }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
 }
